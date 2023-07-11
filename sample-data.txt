@@ -1,0 +1,37 @@
+[
+  {
+    "questionTitle": "What is OOP?",
+    "option1": "Object Oriented Procedures",
+    "option2": "Object Oriented Programming",
+    "option3": "All of the above",
+    "option4": "None of the above",
+    "rightAnswer": "Object Oriented Programming",
+    "difficultyLevel": "Easy",
+    "category": "Java"
+  },
+  {
+    "questionTitle": "Which of the following collection is Mutable?",
+    "option1": "Set",
+    "option2": "Tuple",
+    "option3": "List",
+    "option4": "Map",
+    "rightAnswer": "Tuple",
+    "difficultyLevel": "Easy",
+    "category": "Python"
+  }
+]
+
+create table questions (
+        id bigserial not null,
+        category varchar(255),
+        difficulty_level varchar(255),
+        option1 varchar(255),
+        option2 varchar(255),
+        option3 varchar(255),
+        option4 varchar(255),
+        question_title varchar(255),
+        right_answer varchar(255),
+        primary key (id)
+    )
+
+ ALTER SEQUENCE questions_id_seq RESTART WITH 17
